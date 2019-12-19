@@ -1,0 +1,6 @@
+com\rc\api\Registro.class
+com\rc\mongo\AdminUsers.class
+com\rc\mongo\CorreoConnection.class
+com\rc\mongo\UserPojo.class
+com\rc\mongo\CorreoConnection$1.class
+com\rc\mongo\Queries.class
