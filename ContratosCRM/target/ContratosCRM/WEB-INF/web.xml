@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<web-app version="3.1" 
+	xmlns="http://java.sun.com/xml/ns/javaee" 
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_1.xsd">
+  <display-name>Archetype Created Web Application</display-name>
+ 
+  <servlet>
+  	<servlet-name>srvlt_menu</servlet-name>
+  	<display-name>srvlt_menu</display-name>
+  	<description></description>
+  	<servlet-class>com.rc.controlador.srvlt_menu</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>srvlt_contratos</servlet-name>
+  	<display-name>srvlt_contratos</display-name>
+  	<description></description>
+  	<servlet-class>com.rc.controlador.srvlt_contratos</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>Srvlt_facturas</servlet-name>
+  	<display-name>Srvlt_facturas</display-name>
+  	<description></description>
+  	<servlet-class>com.rc.controlador.Srvlt_facturas</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>srvlt_conversaciones</servlet-name>
+  	<display-name>srvlt_conversaciones</display-name>
+  	<description></description>
+  	<servlet-class>com.rc.controlador.srvlt_conversaciones</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>Srvlt_closeSession</servlet-name>
+  	<display-name>Srvlt_closeSession</display-name>
+  	<description></description>
+  	<servlet-class>com.rc.controlador.Srvlt_closeSession</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>UploadFile</servlet-name>
+  	<display-name>UploadFile</display-name>
+  	<description></description>
+  	<servlet-class>com.rc.controlador.UploadFile</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>srvlt_menu</servlet-name>
+  	<url-pattern>/menu</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>srvlt_contratos</servlet-name>
+  	<url-pattern>/deals</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>Srvlt_facturas</servlet-name>
+  	<url-pattern>/Srvlt_facturas</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>srvlt_conversaciones</servlet-name>
+  	<url-pattern>/conver</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>Srvlt_closeSession</servlet-name>
+  	<url-pattern>/close</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>UploadFile</servlet-name>
+  	<url-pattern>/UploadFile</url-pattern>
+  </servlet-mapping>
+  <jsp-config>
+    <jsp-property-group>
+        <url-pattern>*.jsp</url-pattern>
+        <scripting-invalid>true</scripting-invalid>
+    </jsp-property-group>
+</jsp-config>
+</web-app>
